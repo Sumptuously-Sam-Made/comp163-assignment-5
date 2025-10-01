@@ -19,3 +19,20 @@ while current_number != 1:
 print(1, end=" ")
 print("\nSteps:", step_count)
 # I used a while loop instead of a for loop because I didn't know how many times I would run the loop
+
+# Header + Variables for Challenge 2
+print()
+print("=== Challenge 2: Prime Number Checker ===")
+prime_number = int(input("Enter a number: "))
+print(f"Testing divisors from 2 to {prime_number - 1}...")
+prime = True
+
+# I used booleans and a for loops to logically print out is prime! for a prime number and is not prime + divisor for non-prime numbers
+for i in range(2, int(prime_number) - 1):
+    if prime_number % i == 0:
+        print(f"{prime_number} is not prime (divisible by {i})")
+        prime = False
+        break
+if prime == True:
+    print(prime_number, "is prime!")
+# I used a for loop because the iterations could be quantified through range()
