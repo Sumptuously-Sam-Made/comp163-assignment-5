@@ -37,3 +37,25 @@ if prime == True:
     print(prime_number, "is prime!")
 # I used a for loop because the iterations could be quantified through range()
 
+# Header for Challenge 3
+print()
+print("=== Challenge 3: Multiplication Table ===")
+print("Multiplication Table:")
+
+# These print out the calculations from 1-10 in a times table format
+
+# This is for the header part
+for i in range(1, 11):
+    if i == 1:
+        print(f"  {i:4}", end="")
+    else:
+        print(f"{i:5}", end="")
+
+# This is for the 10x10 table
+for row in range(1, 11):
+    print(f"\n{row:3}", end="")
+    for product in range(1,11):
+        print(f"{product*row:4}", end="")
+        print(" ", end="")
+# Nested loops are important because they stop you from having to repeat the same lines of codes many times over. The outer loop should set up a base for the inner loop. In this problem I used the outer loop to make the rows and the inner to do the calculations.
+
