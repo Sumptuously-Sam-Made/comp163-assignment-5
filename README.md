@@ -1,19 +1,6 @@
-# comp163-assignment-5
-step_count = 0
-current_number = int(input("Enter starting number: "))
-print("Enter starting number:", current_number)
-print("Sequence:", end=" ")
-# Check if current number is not equal to 1
-while current_number != 1:
-    # Calculation for Evens
-    if current_number % 2 == 0:
-        print(current_number, end=" ")
-        current_number = int(current_number / 2)
-        step_count += 1
-    # Calculation for Odds
-    elif current_number % 2 == 1:
-        print(current_number, end=" ")
-        current_number = int(current_number * 3 + 1)
-        step_count += 1
-print(1, end=" ")
-print("\nSteps:", step_count)
+## Why a Loop?
+For the first challenge, I choose a while loop because I needed the program to continue to make iterations until it return n as 1. Next, I used a for loop in the second challenge because I had to make calculations within a certain range based on the user's input. Lastly, I used a nested for loop in the last challenge to simplify my program while outputting a bigger set of data.
+## How Does It Work?
+Many of my solutions involved loops that I built on by using previous concepts such as comparators, logical operators, booleans, and other previously learned information. To go into more detail, the first challenge displays the name of the challenge, followed by a sequence (using end=" " for spacing) determined by the result of the modulus operation on that number (looping using a while loop) and a step counter that prints at the end of the section. Then, the second challenge prints its title and uses a for loop to find the divisor of a number while checking if it is prime. Lastly, I created a multiplication table that utilized a header (including a for loop), followed by a nested for loop to duplicate the process of creating a new row => multiplying.
+## AI Assitance?
+I used Grammarly to correct my spelling and Gemini to explain the use of (semicolons ":") in python
